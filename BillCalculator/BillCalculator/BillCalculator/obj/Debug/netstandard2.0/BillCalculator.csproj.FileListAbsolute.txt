@@ -1,0 +1,13 @@
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\bin\Debug\netstandard2.0\BillCalculator.deps.json
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\bin\Debug\netstandard2.0\BillCalculator.dll
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\bin\Debug\netstandard2.0\BillCalculator.pdb
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\BillCalculator.csprojAssemblyReference.cache
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\Views\CalculatorPage.xaml.g.cs
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\BillCalculator.csproj.CoreCompileInputs.cache
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\BillCalculator.AssemblyInfoInputs.cache
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\BillCalculator.AssemblyInfo.cs
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\BillCalculator.dll
+C:\Users\marrow\Documents\_GIT\BillSplitCalculator\BillCalculator\BillCalculator\BillCalculator\obj\Debug\netstandard2.0\BillCalculator.pdb

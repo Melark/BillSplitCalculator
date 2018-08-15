@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:BillCalculator.ViewModels"
+             x:Class="BillCalculator.Views.CalculatorPage"
+            >
+    <ContentPage.BindingContext>
+        <viewmodels:CalculatorViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Bill Amount"/>
+                <Entry Text="{Binding BillTotal_ExcludingTip,Mode=TwoWay}"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Tip Percentage"/>
+                <Entry Text="{Binding TipPercentage,Mode=TwoWay}"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Amount of People to pay the bill"/>
+                <Entry Text="{Binding AmountOfTimesToSplitBill,Mode=TwoWay}"/>
+            </StackLayout>
+            <Button Text="Calculate Bill" Command="{Binding CalculateBillCommand}"/>
+            <Label Text="Total Bill Including Tip"/>
+            <Label Text="{Binding BillTotal_IncludingTip,Mode=TwoWay}"/>
+            <Label Text="Total to pay per payer"/>
+            <Label Text="{Binding BillSplitTotal,Mode=TwoWay}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
