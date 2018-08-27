@@ -1,8 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:services="clr-namespace:BillCalculator.Services"
              x:Class="BillCalculator.App">
 	<Application.Resources>
-    
-	</Application.Resources>
+        <Style x:Key="LabelPageHeading" TargetType="Label">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+        <Style x:Key="LabelEntryHeading" TargetType="Label">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="DisplayLabelHeading" TargetType="Label">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="DisplayLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+
+        <Style x:Key="InnerStack" TargetType="StackLayout">
+            <Setter Property="Padding" Value="10"/>
+        </Style>
+
+        <services:CurrencyConverterService x:Key="currencyConverterService"/>
+    </Application.Resources>
 </Application>

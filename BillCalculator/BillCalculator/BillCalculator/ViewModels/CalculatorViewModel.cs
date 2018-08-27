@@ -20,8 +20,8 @@ namespace BillCalculator.ViewModels
             }
         }
 
-        private double billTotal_ExcludingTip;
-        public double BillTotal_ExcludingTip
+        private decimal billTotal_ExcludingTip;
+        public decimal BillTotal_ExcludingTip
         {
             get => billTotal_ExcludingTip;
             set
@@ -31,8 +31,8 @@ namespace BillCalculator.ViewModels
             }
         }
 
-        private double billTotal_IncludingTip;
-        public double BillTotal_IncludingTip
+        private decimal billTotal_IncludingTip;
+        public decimal BillTotal_IncludingTip
         {
             get => billTotal_IncludingTip;
             set
@@ -43,8 +43,8 @@ namespace BillCalculator.ViewModels
         }
 
 
-        private double tipPercentage;
-        public double TipPercentage
+        private decimal tipPercentage;
+        public decimal TipPercentage
         {
             get => tipPercentage;
             set
@@ -54,8 +54,8 @@ namespace BillCalculator.ViewModels
             }
         }
 
-        private double billSplitTotal;
-        public double BillSplitTotal
+        private decimal billSplitTotal;
+        public decimal BillSplitTotal
         {
             get => billSplitTotal;
             set

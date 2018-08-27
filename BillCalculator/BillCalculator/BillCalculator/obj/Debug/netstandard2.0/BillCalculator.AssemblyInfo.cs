@@ -11,6 +11,14 @@
 using System;
 using System.Reflection;
 
+[assembly: System.Reflection.AssemblyMetadata("EnableLiveReload", "true")]
+[assembly: System.Reflection.AssemblyMetadata("MqttSessionId", "a44cc815dec3")]
+[assembly: System.Reflection.AssemblyMetadata("MqttHostName", "localhost")]
+[assembly: System.Reflection.AssemblyMetadata("MqttLocalHostAddress", "172.30.71.72")]
+[assembly: System.Reflection.AssemblyMetadata("MqttPort", "1883")]
+[assembly: System.Reflection.AssemblyMetadata("MqttTopicPrefix", "xlr/")]
+[assembly: System.Reflection.AssemblyMetadata("MqttSecretKey", "dDoCJRenkWge/JhO/lKj4jHBc29SN7KpsggFj5mgNDQ=")]
+[assembly: System.Reflection.AssemblyMetadata("MqttSecretIV", "ou0B4jz956xLwFVxQYgWxw==")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BillCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

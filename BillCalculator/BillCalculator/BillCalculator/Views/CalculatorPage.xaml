@@ -3,29 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:BillCalculator.ViewModels"
              x:Class="BillCalculator.Views.CalculatorPage"
-            >
+             xmlns:local="clr-namespace:BillCalculator"
+             BackgroundColor="WhiteSmoke">
+
     <ContentPage.BindingContext>
         <viewmodels:CalculatorViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout>
-                <Label Text="Bill Amount"/>
-                <Entry Text="{Binding BillTotal_ExcludingTip,Mode=TwoWay}"/>
-            </StackLayout>
-            <StackLayout>
-                <Label Text="Tip Percentage"/>
-                <Entry Text="{Binding TipPercentage,Mode=TwoWay}"/>
-            </StackLayout>
-            <StackLayout>
-                <Label Text="Amount of People to pay the bill"/>
-                <Entry Text="{Binding AmountOfTimesToSplitBill,Mode=TwoWay}"/>
-            </StackLayout>
-            <Button Text="Calculate Bill" Command="{Binding CalculateBillCommand}"/>
-            <Label Text="Total Bill Including Tip"/>
-            <Label Text="{Binding BillTotal_IncludingTip,Mode=TwoWay}"/>
-            <Label Text="Total to pay per payer"/>
-            <Label Text="{Binding BillSplitTotal,Mode=TwoWay}"/>
+        <StackLayout Padding="25">
+            <Label Text="Bill Calculator App" Style="{StaticResource LabelPageHeading}"/>
+            <Frame>
+                <StackLayout Style="{StaticResource InnerStack}">
+                    <StackLayout Style="{StaticResource InnerStack}">
+                        <Label Style="{StaticResource LabelEntryHeading}" Text="Bill Amount "/>
+                        <Entry HorizontalOptions="FillAndExpand" Text="{Binding BillTotal_ExcludingTip,Mode=TwoWay, Converter={StaticResource currencyConverterService}}"/>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource InnerStack}">
+                        <Label Style="{StaticResource LabelEntryHeading}" Text="Tip Percentage "/>
+                        <Entry HorizontalOptions="FillAndExpand" Text="{Binding TipPercentage,Mode=TwoWay}"/>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource InnerStack}">
+                        <Label Style="{StaticResource LabelEntryHeading}" Text="Amount of People to pay the bill "/>
+                        <Entry HorizontalOptions="FillAndExpand" Text="{Binding AmountOfTimesToSplitBill,Mode=TwoWay}"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <BoxView HeightRequest="25"/>
+            <Grid ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Calculate Bill" HorizontalOptions="FillAndExpand" Command="{Binding CalculateBillCommand}" Grid.Column="1" Grid.Row="0"/>
+            </Grid>
+            <BoxView HeightRequest="25"/>
+            <Frame>
+                <StackLayout>
+                    <Label Text="Total Bill Including Tip" Style="{StaticResource DisplayLabelHeading}"/>
+                    <Label Text="{Binding BillTotal_IncludingTip,Mode=TwoWay, Converter={StaticResource currencyConverterService}}" Style="{StaticResource DisplayLabel}"/>
+                    <BoxView HeightRequest="25"/>
+                    <Label Text="Total to pay per payer"  Style="{StaticResource DisplayLabelHeading}"/>
+                    <Label Text="{Binding BillSplitTotal,Mode=TwoWay, Converter={StaticResource currencyConverterService}}" Style="{StaticResource DisplayLabel}"/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
